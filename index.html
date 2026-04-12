@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Your Crop | FarmDirect</title>
+    <meta name="description" content="Farmers can list their crops for investment on FarmDirect. Decentralized Agricultural Investment Platform.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Farm<span>Direct</span></div>
+            <h1>List Your Crop</h1>
+            <p>Empowering farmers through decentralized investment.</p>
+        </header>
+
+        <main>
+            <form id="crop-listing-form" class="glass-card">
+                <div class="form-grid">
+                    <div class="input-group">
+                        <label for="crop-name">Crop Name</label>
+                        <input type="text" id="crop-name" name="crop-name" placeholder="e.g. Organic Wheat" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="land-size">Land Size (Acres)</label>
+                        <input type="number" id="land-size" name="land-size" step="0.1" placeholder="e.g. 5.5" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="expected-yield">Expected Yield (kg/tons)</label>
+                        <input type="text" id="expected-yield" name="expected-yield" placeholder="e.g. 2000 kg" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="total-shares">Total Shares Available</label>
+                        <input type="number" id="total-shares" name="total-shares" placeholder="e.g. 100" required>
+                    </div>
+
+                    <div class="input-group full-width">
+                        <label for="price-per-share">Price per Share (₹)</label>
+                        <input type="number" id="price-per-share" name="price-per-share" step="0.01" placeholder="e.g. 5000" required>
+                    </div>
+                </div>
+
+                <div class="form-footer">
+                    <button type="submit" id="submit-btn" class="primary-btn">List Crop Now</button>
+                    <p class="disclaimer">By submitting, you agree to our terms of decentralized agricultural listing.</p>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
