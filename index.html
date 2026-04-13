@@ -3,57 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>List Your Crop | FarmDirect</title>
-    <meta name="description" content="Farmers can list their crops for investment on FarmDirect. Decentralized Agricultural Investment Platform.">
+    <title>FarmDirect | Decentralized Agricultural Platform</title>
+    <meta name="description" content="Invest directly in farming and manage the complete supply chain with AI-powered insights.">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for specific icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-    <div class="container">
-        <header>
+<body class="home-page">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Farm<span>Direct</span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="investor.html">Invest</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#" class="login-btn">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Revolutionizing Agriculture with <span>Decentralized AI</span></h1>
+            <p>Direct investment in farming. Complete supply chain management. AI-driven yield and price predictions.</p>
+            <div class="hero-btns">
+                <a href="list-crop.html" class="primary-btn">Join as Farmer</a>
+                <a href="investor.html" class="secondary-btn">Start Investing</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="section-container">
+            <h2 class="section-title">Smart Farming for a Better Future</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon-box">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI Yield Prediction</h3>
+                    <p>Harness the power of AI for precise yield forecasting, price analysis, and risk assessment to maximize profitability.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box">
+                        <i class="fas fa-hand-holding-dollar"></i>
+                    </div>
+                    <h3>Decentralized Funding</h3>
+                    <p>Empower farmers with flexible share-based investment models. Complete autonomy over pricing and project structuring.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box">
+                        <i class="fas fa-truck-fast"></i>
+                    </div>
+                    <h3>Integrated Logistics</h3>
+                    <p>End-to-end supply chain management from cultivation to final sale, ensuring efficient transportation and storage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-summary">
+        <div class="section-container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>What is FarmDirect?</h2>
+                    <p>FarmDirect is a decentralized, AI-powered agricultural platform that enables individuals to invest directly in farming while managing the complete agricultural supply chain from cultivation to final sale.</p>
+                    <p>We bridge the gap between traditional farming and modern investment, using technology to ensure transparency, reduce intermediaries, and empower local agricultural communities.</p>
+                </div>
+                <div class="about-image">
+                    <img src="crop_wheat_field.png" alt="FarmDirect Agriculture">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
             <div class="logo">Farm<span>Direct</span></div>
-            <h1>List Your Crop</h1>
-            <p>Empowering farmers through decentralized investment.</p>
-        </header>
-
-        <main>
-            <form id="crop-listing-form" class="glass-card">
-                <div class="form-grid">
-                    <div class="input-group">
-                        <label for="crop-name">Crop Name</label>
-                        <input type="text" id="crop-name" name="crop-name" placeholder="e.g. Organic Wheat" required>
-                    </div>
-
-                    <div class="input-group">
-                        <label for="land-size">Land Size (Acres)</label>
-                        <input type="number" id="land-size" name="land-size" step="0.1" placeholder="e.g. 5.5" required>
-                    </div>
-
-                    <div class="input-group">
-                        <label for="expected-yield">Expected Yield (kg/tons)</label>
-                        <input type="text" id="expected-yield" name="expected-yield" placeholder="e.g. 2000 kg" required>
-                    </div>
-
-                    <div class="input-group">
-                        <label for="total-shares">Total Shares Available</label>
-                        <input type="number" id="total-shares" name="total-shares" placeholder="e.g. 100" required>
-                    </div>
-
-                    <div class="input-group full-width">
-                        <label for="price-per-share">Price per Share (₹)</label>
-                        <input type="number" id="price-per-share" name="price-per-share" step="0.01" placeholder="e.g. 5000" required>
-                    </div>
-                </div>
-
-                <div class="form-footer">
-                    <button type="submit" id="submit-btn" class="primary-btn">List Crop Now</button>
-                    <p class="disclaimer">By submitting, you agree to our terms of decentralized agricultural listing.</p>
-                </div>
-            </form>
-        </main>
-    </div>
+            <p>&copy; 2026 FarmDirect Decentralized Platform. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
