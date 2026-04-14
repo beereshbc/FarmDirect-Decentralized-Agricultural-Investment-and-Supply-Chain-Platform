@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invest in Farming | FarmDirect</title>
+    <meta name="description" content="Browse and invest in premium farming projects. Decentralized Agricultural Investment Platform.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="investor-page">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Farm<span>Direct</span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="investor.html" class="active">Invest</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#" class="login-btn">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container wide">
+        <header>
+            <h1>Invest in the Future</h1>
+            <p>Support local farmers and earn returns on decentralized crop investments.</p>
+        </header>
+
+        <main>
+            <section class="project-grid">
+                <!-- Project Card 1 -->
+                <article class="project-card">
+                    <div class="card-image">
+                        <img src="crop_wheat_field.png" alt="Golden Wheat Project">
+                        <div class="badge">Trending</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="crop-name">Golden Wheat Harvest</h3>
+                        <p class="farmer-name">By <span>Rajesh Kumar</span></p>
+                        <div class="card-stats">
+                            <div class="stat">
+                                <span class="label">Price per Share</span>
+                                <span class="value">₹5,000</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">Yield Goal</span>
+                                <span class="value">2,500 kg</span>
+                            </div>
+                        </div>
+                        <button class="buy-btn">Buy Share</button>
+                    </div>
+                </article>
+
+                <!-- Project Card 2 (Duplicate for demo) -->
+                <article class="project-card">
+                    <div class="card-image">
+                        <img src="crop_wheat_field.png" alt="Organic Barley Project">
+                        <div class="badge">Sustainable</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="crop-name">Organic Barley Estate</h3>
+                        <p class="farmer-name">By <span>Amit Sharma</span></p>
+                        <div class="card-stats">
+                            <div class="stat">
+                                <span class="label">Price per Share</span>
+                                <span class="value">₹3,200</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">Yield Goal</span>
+                                <span class="value">1,800 kg</span>
+                            </div>
+                        </div>
+                        <button class="buy-btn">Buy Share</button>
+                    </div>
+                </article>
+
+                <!-- Project Card 3 (Duplicate for demo) -->
+                <article class="project-card">
+                    <div class="card-image">
+                        <img src="crop_wheat_field.png" alt="Premium Corn Project">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="crop-name">Premium Sweet Corn</h3>
+                        <p class="farmer-name">By <span>Sunita Devi</span></p>
+                        <div class="card-stats">
+                            <div class="stat">
+                                <span class="label">Price per Share</span>
+                                <span class="value">₹4,500</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">Yield Goal</span>
+                                <span class="value">3,000 kg</span>
+                            </div>
+                        </div>
+                        <button class="buy-btn">Buy Share</button>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        document.querySelectorAll('.buy-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const crop = btn.closest('.project-card').querySelector('.crop-name').innerText;
+                alert(`Proceeding to investment for: ${crop}\nSecure transaction initialized...`);
+            });
+        });
+    </script>
+</body>
+</html>
